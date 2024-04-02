@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Pod request access landing page - Front-end Friday</title>
 </head>
 <body>
-
-    <h1>pod</h1>
+    <header>
+        <img src="assets/images/logo.png" alt="logo" width="56" height="56">
+        <h1>pod</h1>
+        <!-- <img src="assets/images/pod.png" alt="logo" width="65.65" height="35.65"> -->
+    </header>
+    
     <main>
-        <section>
-            <h2>PUBLISH YOUR PODCASTS <span>EVERYWHERE.</span></h2>    
-            <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-                Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
-        </section>        
-        <div id="logos"></div>    
+        <section id="description">
+            <h2>PUBLISH YOUR PODCASTS <br>
+                <span>EVERYWHERE.</span></h2>    
+            <p id="details">Upload your audio to Pod with a single click. We’ll 
+                then distribute your podcast to Spotify,  
+                Apple Podcasts, Google Podcasts, Pocket 
+                Casts and more!</p>
+        </section>    
+        
+        <div id="logos">
+            <img src="assets/images/podcast-logos.png" alt="podcasts logos">
+        </div>    
+
         <form>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-            <input type="email" placeholder="Email address"><br>
-            <button type="submit">Request access</button>
+            <input type="email" class="formItem" id="email" name="email" placeholder="Email address"><br>
+            <button type="submit"  class="formItem" id="access">Request Access</button>
         </form>
     </main>
 </body>

@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsla(224, 35%, 11%, 1);
+    background-image: url("assets/images/bg-mobile.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    font-family: "Chivo", sans-serif;
+    /* margin: 0; */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 55px auto;
+}
+
+h1 {
+    margin: auto 0;
+    margin-left: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+h2 {
+    color: #54E6AF;
+    font-size: 26px;
+    font-weight: 100;
+    margin-top: 68px;
+}
+
+h2 span {
+    color: #FFFFFF;
+}
+
+#description {
+    margin: 40px auto;
+    text-align: center;
+    width: 327px;
+}
+
+#details {
+    color: #C2CBE5;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#logos {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 327px;
+    margin: 40px auto;
+}
+
+.formItem {
+    border-radius: 25px;
+    border: none;
+    height: 46px;
+    font-weight: 700;
+}
+
+#email {
+    text-indent: 8%;
+    background-color: #2C344B;
+    color: white;
+}
+
+#email::placeholder {
+    color: #969aa5;
+}
+
+#email:focus {
+    outline: none;
+}
+
+#access {
+    background-color: hsla(157, 74%, 61%, 1);
+}
+

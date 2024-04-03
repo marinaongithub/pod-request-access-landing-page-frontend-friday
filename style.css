@@ -4,11 +4,8 @@
 
 body {
     background-color: hsla(224, 35%, 11%, 1);
-    /* background-image: url("assets/images/bg-mobile.png");
-    background-position: right;
-    background-repeat: no-repeat; */
     font-family: "Chivo", sans-serif;
-    background-size: contain;
+    height: 100vh;
 }
 
 /* HEADER */
@@ -83,6 +80,8 @@ form {
 
 #email::placeholder {
     color: #969aa5;
+    font-size: 14px;
+
 }
 
 #email:focus {
@@ -106,3 +105,88 @@ form {
     margin: 0;
 }
 
+@media only screen and (min-width:768px) {
+
+    header {
+        justify-content: flex-start;
+        padding-left: 38px;
+    }
+
+    #bgImg {
+        background-image: url("assets/images/bg-img.png");
+        background-position: 55% center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 491px;
+        height: 767px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: -1;
+    }
+
+    main {
+        background-color: #121725;
+        position: relative;
+        left: 40px;
+        top: 95px;
+        width: 635px;
+        height: 509px;
+    }
+
+    #description {
+        margin: 20px 0px;
+        text-align: left;
+    }
+
+    h2 {
+        margin: 0px;
+        font-size: 48px;
+        font-weight: 100;
+        width: 635px;
+        padding-top: 85px;
+    }
+
+    #details {
+        font-size: 18px;
+        width: 445px;
+        line-height: 28px;
+    }
+
+    #logos {
+        position: relative;
+        top: 170px;
+        justify-content: flex-start;
+    }
+
+    #logos img {
+        width: 540px;
+    }
+
+    form {
+        margin: 10px 0px;
+    }
+
+    #email {
+        width: 427px;
+        height: 56px;
+    }
+
+    #accessBtn {
+        width: 162px;
+        position: absolute;
+        top: 365px;
+        left: 260px;
+    }
+
+    #greenDots {
+        background-image: url("assets/images/green-dots.png");
+        background-repeat: no-repeat;
+        width: 232px;
+        height: 104px;
+        position: fixed;
+        left: 35px;
+        bottom: 0;
+        z-index: -2;
+    }
+}

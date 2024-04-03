@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    margin: 55px auto;
+    padding-top: 55px;
 }
 
 h1 {
@@ -88,6 +88,10 @@ form {
     outline: none;
 }
 
+#email:-webkit-autofill, #email:-moz-autofill {
+    background-color: #2C344B;
+}
+
 #accessBtn {
     background-color: hsla(157, 74%, 61%, 1);
     cursor: pointer;
@@ -104,6 +108,10 @@ form {
     padding: 10px;
     margin: 0;
 }
+
+/* MEDIA QUERIES */
+
+/* Tablet */
 
 @media only screen and (min-width:768px) {
 
@@ -188,5 +196,46 @@ form {
         left: 35px;
         bottom: 0;
         z-index: -2;
+    }
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1200px) {
+
+    header {
+        padding-top: 80px;
+        padding-left: 160px;
+    }
+
+    #bgImg {
+        background-position: 55% center;
+        width: 888px;
+        height: 640px;
+        top: 110px;
+    }
+
+    main {
+        width: 723px;
+        top: 80px;
+        left: 160px;
+    }
+
+    h2 {
+        font-size: 52px;
+        width: 665px;
+    }
+
+    #accessBtn {
+        top: 375px;
+    }
+
+    #greenDots {
+        position: absolute;
+        left: auto;
+        right: 0px;
+        top: 700px;
+        z-index: 1;
     }
 }

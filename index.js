@@ -24,6 +24,10 @@ function validateEmail() {
     if (!isValidEmail(emailValue)) {
         setError(emailValue);
     }
+
+    else {
+        form.submit();
+    }
 }
 
 form.addEventListener('submit', function(e) {

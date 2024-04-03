@@ -4,12 +4,14 @@
 
 body {
     background-color: hsla(224, 35%, 11%, 1);
-    background-image: url("assets/images/bg-mobile.png");
+    /* background-image: url("assets/images/bg-mobile.png");
     background-position: right;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     font-family: "Chivo", sans-serif;
-    /* margin: 0; */
+    background-size: contain;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -24,6 +26,8 @@ h1 {
     font-weight: 600;
     color: hsla(0, 0%, 100%, 1);
 }
+
+/* MAIN */
 
 h2 {
     color: #54E6AF;
@@ -54,6 +58,8 @@ h2 span {
     justify-content: center;
 }
 
+/* FORM */
+
 form {
     display: flex;
     flex-direction: column;
@@ -72,6 +78,7 @@ form {
     text-indent: 8%;
     background-color: #2C344B;
     color: white;
+    cursor: pointer;
 }
 
 #email::placeholder {
@@ -82,7 +89,20 @@ form {
     outline: none;
 }
 
-#access {
+#accessBtn {
     background-color: hsla(157, 74%, 61%, 1);
+    cursor: pointer;
+}
+
+#accessBtn:hover {
+    background-color: #B3FFE2;
+}
+
+#errorMsg {
+    color: #FB3E3E;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 0;
 }
 

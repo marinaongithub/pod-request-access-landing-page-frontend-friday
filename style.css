@@ -176,6 +176,10 @@ form {
         margin: 10px 0px;
     }
 
+    br {
+        display: none;
+    }
+
     #email {
         width: 427px;
         height: 56px;

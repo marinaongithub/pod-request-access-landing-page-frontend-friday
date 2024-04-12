@@ -5,7 +5,7 @@
 body {
     background-color: hsla(224, 35%, 11%, 1);
     font-family: "Chivo", sans-serif;
-    height: 100vh;
+    height: 100svh;
     margin: 0;
 }
 
@@ -197,7 +197,7 @@ form {
         background-repeat: no-repeat;
         width: 232px;
         height: 104px;
-        position: fixed;
+        position: absolute;
         left: 35px;
         bottom: 0;
         z-index: -2;
